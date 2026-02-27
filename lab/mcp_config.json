@@ -1,0 +1,18 @@
+{
+  "_comment": "Claude Desktop MCP configuration. Save to: ~/Library/Application Support/Claude/claude_desktop_config.json (Mac) or %APPDATA%/Claude/claude_desktop_config.json (Windows)",
+
+  "mcpServers": {
+    "elastic-soc-agent": {
+      "command": "python",
+      "args": ["/FULL/PATH/TO/lab/01_mcp_server.py"],
+      "env": {
+        "ELASTIC_CLOUD_URL":   "https://YOURDEPLOYMENT.es.REGION.aws.elastic-cloud.com:9243",
+        "ELASTIC_API_KEY":     "your_base64_api_key",
+        "KIBANA_URL":          "https://YOURDEPLOYMENT.kb.REGION.aws.elastic-cloud.com:9243",
+        "ANTHROPIC_API_KEY":   "sk-ant-your-key",
+        "DEMO_MODE":           "true",
+        "ALERT_INDEX":         "soc-lab-alerts"
+      }
+    }
+  }
+}
