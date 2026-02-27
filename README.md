@@ -146,45 +146,21 @@ Three realistic attack scenarios are pre-loaded by `00_lab_setup.py`:
 
 ---
 
-## 🧰 MCP Tools Reference
+## Output 
 
-| Tool | Description |
-|---|---|
-| `search_alerts` | Poll `.alerts-security` index for open alerts |
-| `get_alert_detail` | Full alert context by ID |
-| `query_evidence` | Elasticsearch query for investigation |
-| `retrieve_playbook` ★ | kNN + ELSER + RRF semantic playbook search |
-| `execute_action` | Confidence-gated response action dispatch |
-| `create_case` | Kibana Cases API — create IR case |
-| `update_alert_status` | Acknowledge / close / escalate alert |
-| `log_agent_step` | Write execution step to `soc_agent_log` |
-| `get_asset_profile` | User/host criticality from asset inventory |
+<img width="1678" height="1626" alt="image" src="https://github.com/user-attachments/assets/d462e689-2884-4671-b037-1eb43b91ef4e" />
 
----
+<img width="1682" height="1407" alt="image" src="https://github.com/user-attachments/assets/5fff09ca-8943-44db-9274-dd87ec20f204" />
 
-## 📊 Results (90-Day Pilot)
+<img width="1687" height="1033" alt="image" src="https://github.com/user-attachments/assets/28c598ee-4d38-4c8a-8aac-e6f0839fe4d3" />
 
-| Metric | Before | After | Δ |
-|---|---|---|---|
-| Mean Time to Respond | 4h 22m | 2m 57s | ↓ 98.9% |
-| Alert coverage | 11% | 94% | ↑ 83pts |
-| Analyst toil | 6.5h/shift | 0.8h/shift | ↓ 88% |
-| Escalations to human | 100% | 6% | ↓ 94% |
 
----
 
-## ⚙️ Environment Variables
 
-| Variable | Description |
-|---|---|
-| `ELASTIC_CLOUD_URL` | Elasticsearch endpoint (`:9243`) |
-| `ELASTIC_API_KEY` | Base64 encoded API key from Kibana |
-| `KIBANA_URL` | Kibana endpoint (`:9243`) |
-| `ANTHROPIC_API_KEY` | From console.anthropic.com |
-| `DEMO_MODE` | `true` = log actions without executing (safe for demo) |
-| `ALERT_INDEX` | `soc-lab-alerts` (lab) or `.alerts-security.alerts-default` (prod) |
 
----
+
+
+
 
 ## 🔒 Security Notes
 
@@ -202,4 +178,4 @@ MIT — free to use, adapt, and build on.
 
 ---
 
-*Built for #ElasticBlogathon · Security Track · Elastic 8.x · Python 3.10+ · ELSER · MCP*
+*Built for #ElasticBlogathon · Security Track 
