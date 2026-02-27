@@ -6,6 +6,9 @@
 
 A fully autonomous Security Operations Center (SOC) agent built on Elastic Security, ELSER vector search, and Claude via the Model Context Protocol (MCP). When a SIEM alert fires at 3:47 AM, this system retrieves the right playbook by semantic similarity and executes the response automatically — in under 3 minutes, without waking anyone up.
 
+<img width="807" height="1134" alt="image" src="https://github.com/user-attachments/assets/add83657-2466-4fb2-ae15-55b7997efedf" />
+
+
 ---
 
 ## 📖 Full Blog Post
@@ -15,7 +18,6 @@ A fully autonomous Security Operations Center (SOC) agent built on Elastic Secur
 ---
 
 ## 🏗️ Architecture
-
 
 ```
 Elastic Agent / Beats / Cloud APIs
@@ -40,6 +42,12 @@ CLAUDE AGENT (02_autonomous_agent.py)                  │
   4. Decide + Act (confidence-gated)                   │
   5. Create Case + update stats ─────────────────────►─┘
 ```
+
+**Automated Playbook flow**
+
+<img width="3746" height="1696" alt="image" src="https://github.com/user-attachments/assets/b999bd0d-d406-41ed-9306-32699a40243a" />
+
+
 
 ---
 
