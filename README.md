@@ -13,7 +13,7 @@ A fully autonomous Security Operations Center (SOC) agent built on Elastic Secur
 
 ## 📖 Full Blog Post
 
-**[The Alert That Nobody Actioned — Until I Built This on Elastic →](https://medium.com/YOUR_LINK_HERE)**
+**[The Alert That Nobody Actioned — Until I Built This on Elastic →](https://medium.com/@shubhendushubham/the-alert-that-nobody-actioned-until-i-built-this-on-elastic-7c5c58409937)**
 
 ---
 
